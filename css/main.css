@@ -4,9 +4,10 @@ body {
 /* Header */
 header {
   background-color: #E1E1E1;
-  height: 20vh;
+  height: 10vh;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 #firstsection {
@@ -17,86 +18,109 @@ header {
 #imageuser {
   border-radius: 50%;
   display: inline-block;
-  left: 7%;
+  left: 15%;
   padding: 10px;
   position: relative;
-  width: 100px;
+  width: 50px;
 }
 
 #logolab {
   display: inline-block;
-  left: 20%;
-  padding-bottom: 8%;
+  left: 30%;
+  padding-bottom: 5%;
   position: relative;
+  width: 230px;
 }
 
 #sections {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: bold;
   left: 42%;
   position: absolute;
-  top: 41%;
+  top: 30%;
   width: 50%;
 }
 
 .menu {
   color: black;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
 }
 
 hr {
-  background-color: #A6ACAF;
+  background-color: #FEE420;
   border: 1px;
   height: 5px;
+  margin: 0;
   position: relative;
-  top: 0;
-  width: 100%;
+  bottom: 5px;
 }
 
 /* Main */
-#container, .statistics, .coaches {
+#container, #container1, #container2  {
   background-color: #ECF0F1;
-  height: 110vh;
+  position: relative;
   width: 100%;
 }
 
-#container, .location {
+#container {
+  height: 1000px;
+  top: 10vh;
+}
+
+#container1 {
   background-color: white;
-  height: 110vh;
-  width: 100%;
+  height: 900px;
 }
 
-.statistics, .coaches, .location {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
-  font-weight: 400;
-  height: 100vh;
-  text-align: center;
+#container2 {
+  height: 900px;
 }
 
-#statistics, #coaches, #location {
-  box-sizing: content-box;
+.logos {
   display: block;
-  padding: 23vh;
+  left: 30%;
+  padding: 13vh;
+  padding-bottom: 1vh;
+  position: relative;
+  width: 25%;
 }
 
-#coaches, #location {
-  box-sizing: content-box;
-  display: block;
-  padding: 5vh;
+.chart {
+  display: inline-block;
+  height: 300px;
+  left: 5%;
+  padding: 4vh;
+  position: relative;
+  width: 550px;
+  border: 3px solid black;
 }
 
+.sedelab {
+  height: 250px;
+  bottom: 5%;
+  left: 13%;
+  padding: 1vh;
+  padding-left: 3vh;
+  position: relative;
+  width: 400px;
+}
+
+.containersedes {
+  background-color: white;
+  border: 3px solid black;
+  height: 650px;
+}
 
 /* Footer */
 footer {
   background-color: #A6ACAF;
   display: inline-block;
-  height: 10vh;
-  position: absolute;
-  top: 300vh;
+  height: 13vh;
+  margin: 0;
+  position: relative;
   width: 100%;
 }
 
@@ -104,7 +128,6 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   font-weight: 400;
-  position: relative;
-  top: 35%;
-  text-align: center;
+  padding: 4vh;
+  text-align: center
 }
